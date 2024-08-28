@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genie's Gems Onboarding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Vendor Onboarding</h1>
+    </header>
+    <main>
+        <section class="onboarding">
+            <h2>Register as a Vendor</h2>
+            <form id="onboardingForm">
+                <label for="vendorName">Vendor Name:</label>
+                <input type="text" id="vendorName" name="vendorName" required>
+
+                <label for="vendorEmail">Email:</label>
+                <input type="email" id="vendorEmail" name="vendorEmail" required>
+
+                <label for="vendorPhone">Phone Number:</label>
+                <input type="tel" id="vendorPhone" name="vendorPhone" required>
+
+                <label for="vendorLocation">Shop Location:</label>
+                <input type="text" id="vendorLocation" name="vendorLocation" required>
+
+                <label for="productDescription">Product Description:</label>
+                <textarea id="productDescription" name="productDescription" required></textarea>
+
+                <label for="productImages">Upload Product Images (Max 5):</label>
+                <input type="file" id="productImages" name="productImages[]" accept="image/*" multiple required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travel Website. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

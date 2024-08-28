@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Vendor Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="specialties.html">Specialties</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="profile">
+            <h2>Your Profile</h2>
+            <div class="profile-info">
+                <p><strong>Username:</strong> vendorUsername</p>
+                <p><strong>Email:</strong> vendorEmail@example.com</p>
+                <p><strong>Company Name:</strong> Vendor Company</p>
+                <!-- Additional profile information -->
+            </div>
+            <button onclick="location.href='edit_profile.html'">Edit Profile</button>
+        </section>
+        
+        <section class="specialties">
+            <h2>Your Specialties</h2>
+            <ul id="specialtiesList">
+                <li>Specialty 1</li>
+                <li>Specialty 2</li>
+                <li>Specialty 3</li>
+                <!-- Additional specialties can be listed here -->
+            </ul>
+            <button onclick="location.href='add_specialty.html'">Add Specialty</button>
+            <button onclick="location.href='update_specialty.html'">Update Specialty</button>
+        </section>
+        
+        <section class="orders">
+            <h2>Recent Orders</h2>
+            <table>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>1001</td>
+                    <td>John Doe</td>
+                    <td>2024-08-01</td>
+                    <td>Completed</td>
+                    <td><button>View Details</button></td>
+                </tr>
+                <!-- Additional orders can be listed here -->
+            </table>
+            <button onclick="location.href='all_orders.html'">View All Orders</button>
+        </section>
+
+        <section class="reviews">
+            <h2>Recent Reviews</h2>
+            <ul id="reviewsList">
+                <li><strong>Jane Smith:</strong> "Great service!" (5/5)</li>
+                <li><strong>Mark Johnson:</strong> "Satisfied with the product." (4/5)</li>
+                <!-- Additional reviews can be listed here -->
+            </ul>
+            <button onclick="location.href='all_reviews.html'">Manage Reviews</button>
+        </section>
+
+        <section class="analytics">
+            <h2>Performance Analytics</h2>
+            <div class="analytics-info">
+                <p><strong>Total Sales:</strong> $10,000</p>
+                <p><strong>Monthly Growth:</strong> 15%</p>
+                <p><strong>Top Product:</strong> Specialty X</p>
+                <!-- Additional analytics data can be displayed here -->
+            </div>
+            <button onclick="location.href='detailed_analytics.html'">View Detailed Analytics</button>
+        </section>
+
+        <section class="support">
+            <h2>Support</h2>
+            <p>If you need help, please contact our support team.</p>
+            <button onclick="location.href='contact_support.html'">Contact Support</button>
+            <button onclick="location.href='faq.html'">View FAQs</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travel Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

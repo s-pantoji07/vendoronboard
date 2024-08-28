@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genie's Gems Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function redirectToDashboard(event) {
+            event.preventDefault(); // Prevent the default form submission
+            window.location.href = "dashboard.html"; // Redirect to dashboard.html
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Genie's Gems Login</h1>
+    </header>
+    <main>
+        <section class="login">
+            <h2>Login to Your Account</h2>
+            <form id="loginForm" onsubmit="redirectToDashboard(event)">
+                <label for="vendorUsername">Username:</label>
+                <input type="text" id="vendorUsername" name="vendorUsername" required>
+
+                <label for="vendorPassword">Password:</label>
+                <input type="password" id="vendorPassword" name="vendorPassword" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p>New user? <a href="onboarding.html">Sign up for Vendor Onboarding</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travel Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
